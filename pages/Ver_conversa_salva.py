@@ -3,6 +3,7 @@ import streamlit as st
 st.set_page_config(
     page_title="Chat.ai - Conversa salva",
     page_icon="🤖",
+    initial_sidebar_state="expanded",
 )
 
 st.write("# Conversa salva")
