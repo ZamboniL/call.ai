@@ -1,10 +1,14 @@
 import streamlit as st
+from state import (initialize_state, sidebar_config_inputs)
 
 st.set_page_config(
     page_title="Chat.ai - Como funciona?",
     page_icon="🤖",
     initial_sidebar_state="expanded",
 )
+
+initialize_state()
+sidebar_config_inputs()
 
 st.write("#  🤖 Bem vindo ao Chat.ai 🤖")
 
@@ -31,10 +35,11 @@ st.markdown(
 
     1. Exporte a conversa do WhatsApp em um arquivo de texto, siga as instruções
     [aqui](https://faq.whatsapp.com/android/chats/how-to-save-your-chat-history/?lang=pt_br).
-    2. Nos informe o nome do seu contato :warning: **O nome deve ser exatamente igual ao que
+    2. Insira sua API Key do OpenAI.
+    3. Nos informe o nome do seu contato :warning: **O nome deve ser exatamente igual ao que
     está salvo no seu celular**.
-    3. Nos informe o seu nome, esse serve apenas para como o chatbot irá se referir a você.
-    4. Envie o arquivo de texto exportado do WhatsApp.
+    4. Nos informe o seu nome, esse serve apenas para como o chatbot irá se referir a você.
+    5. Envie o arquivo de texto exportado do WhatsApp.
 
     E pronto! O Chat.ai irá analisar o seu arquivo e gerar um chatbot que irá
     assumir a identidade do seu contato. Agora é só enviar mensagens e conversar como

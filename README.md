@@ -10,8 +10,6 @@ The interface is built using [Streamlit](https://www.streamlit.io/).
 
 To use the chatbot, you must first create an account on the [OpenAI website](https://beta.openai.com/). Once you have an account, you can create an API key. You will need this key to use the chatbot.
 
-Once you have an API key, you need to add a `.env` file, with the value for `OPENAI_API_KEY`, at the root of the project.
-
 After these steps you can run the application using the following commands:
 
 ```bash
